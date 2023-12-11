@@ -37,19 +37,18 @@
       border-radius: 0;
     }
   }
-  // MESSAGE JUMP
-  >div[style^='border-radius: 2px;'] {
-    &[style$='0);'] {
-      animation: none;
-    }
-    border-radius: 3px !important;
-    animation: cv-message-jump 2s ease-in-out;
-  }
 }
+
 // GIFS/EMBEDS
 %messageInlineMediaEmbed {
   max-width: max-content;
 }
+
+// SPOILER
+%messageSpoiler {
+  background-color: hsla(0, 0%, 0%, 0.8);
+}
+
 // LINKS
 %markup a,
 %anchor {
@@ -58,7 +57,7 @@
 
 // INVALID GIFT
 %themeDark {
-  .tile-2mmK5T {
+  .tile_ebc93b {
     background-color: hsla(0, 0%, 0%, 0.4);
     &:hover {
       background-color: hsla(0, 0%, 0%, 0.4);
@@ -85,7 +84,7 @@
   }
   %messageRepliedTextContentIcon {
     opacity: 0.7;
-    %messageRepliedTextPreview:hover+& {
+    %messageRepliedTextPreview:hover + & {
       opacity: 1;
     }
   }
@@ -116,10 +115,10 @@
   }
 }
 %threadJumpButton {
-  background-color: var(--main-color);
+  background-color: $main-color;
   color: #fff;
   &:hover {
-    background-color: var(--hover-color);
+    background-color: $hover-color;
     color: #fff;
   }
 }
@@ -140,8 +139,8 @@
 // EDITING
 %themeDark %operations {
   color: hsla(0, 0%, 100%, 0.5);
-  >a {
-    color: var(--main-color);
+  > a {
+    color: $main-color;
   }
 }
 
@@ -151,7 +150,7 @@
     background-color: hsla(0, 0%, 100%, 0.08);
   }
   &:before {
-    background-color: var(--main-color);
+    background-color: $main-color;
   }
 }
 
@@ -166,26 +165,26 @@
 }
 
 // PUBLISH TO FOLLOWERS
-.bumpBox-1Pp4td {
-	background: hsla(0, 0%, 0%, .4);
+.bumpBox_cfd81a {
+  background: hsla(0, 0%, 0%, 0.4);
 }
-.icon-3N9zCW,
-.tagline-7EjHTm {
-	color: #fff;
+.icon_c766f4,
+.tagline_a404cb {
+  color: #fff;
 }
-.closeIcon-2Qp1gl,
-.hidePermanently-3f2ZH0 {
-	color: hsla(0, 0%, 100%, .4) !important;
+.closeIcon__1f39d,
+.hidePermanently_a71dd2 {
+  color: hsla(0, 0%, 100%, 0.4) !important;
 }
 
 // AUTOMOD MESSAGE
-.embedCard-bDyD5S,
-.footerContainer-11-cKL  {
-	background-color: hsla(0, 0%, 0%, .4);
+.embedCard__66fca,
+.footerContainer_a703d5 {
+  background-color: hsla(0, 0%, 0%, 0.4);
 }
-.footerAction-cEV-Po .text-xs-normal-3O7EaX {
-	color: $main-color !important;
+.footerAction_fba33a .text-xs-normal_ccc5fb {
+  color: $main-color !important;
 }
-.footerIcon-3nJDhW path {
-	fill: $main-color;
+.footerIcon__61cc7 path {
+  fill: $main-color;
 }

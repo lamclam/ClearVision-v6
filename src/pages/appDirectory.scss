@@ -18,7 +18,8 @@
     background: $hover-color;
   }
 }
-%directoryCard {
+%directoryCard,
+%directoryNewToApps {
   background: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
 }
 %directoryListCard {
@@ -55,7 +56,7 @@
   }
 }
 %directorySearchCategoryActive {
-	background: $main-color;
+  background: $main-color;
 }
 
 // APP PAGE
@@ -71,9 +72,9 @@
 %directoryAppCommandList,
 %directoryAppPermissionList,
 %directoryAppIntentList,
-%directoryAppPremiumCardHeader, 
+%directoryAppPremiumCardHeader,
 %directoryAppPremiumContainer {
-	background: hsla(0, 0%, 0%, 0.4);
+  background: hsla(0, 0%, 0%, 0.4);
 }
 %directoryAppCommand {
   background: transparent;

@@ -4,9 +4,9 @@
   border-color: hsla(0, 0%, 100%, 0.5);
   &%checkboxChecked {
     background-color: transparent !important;
-    border-color: var(--main-color) !important;
-    >svg {
-      >path {
+    border-color: $main-color !important;
+    > svg {
+      > path {
         fill: #fff;
       }
     }

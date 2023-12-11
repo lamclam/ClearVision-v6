@@ -17,10 +17,7 @@
     }
   }
 }
-@each $d in top,
-right,
-bottom,
-left {
+@each $d in top, right, bottom, left {
   @keyframes cv-slide-#{$d} {
     from {
       #{$d}: 100%;
@@ -157,13 +154,13 @@ left {
 }
 @keyframes cv-shadow-pulse {
   0% {
-    box-shadow: 0 0 6px 2px var(--main-color);
+    box-shadow: 0 0 6px 2px $main-color;
   }
   50% {
-    box-shadow: 0 0 10px 2px var(--main-color);
+    box-shadow: 0 0 10px 2px $main-color;
   }
   100% {
-    box-shadow: 0 0 6px 2px var(--main-color);
+    box-shadow: 0 0 6px 2px $main-color;
   }
 }
 @keyframes cv-shake {

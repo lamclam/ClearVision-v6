@@ -1,8 +1,7 @@
 // NUMBER BADGE (AKA PINGS)
 %numberBadge,
-%inboxBadge,
 %textBadge {
-  background: $main-color  !important;
+  background: $main-color !important;
   box-shadow: 0 0 10px -3px $main-color, 0 0 0 1px $main-color;
   color: #fff;
   font-weight: 600;
@@ -27,17 +26,17 @@
 
 // FLOWER STAR BADGE
 %flowerStarContainer {
-  color: var(--main-color);
+  color: $main-color;
   %flowerStarIcon {
     color: #fff;
   }
   %flowerStarChild {
-    >svg {
+    > svg {
       color: #fff;
     }
   }
 }
 
-%gameVerifiedIcon>svg>path {
-  fill: var(--main-color);
+%gameVerifiedIcon > svg > path {
+  fill: $main-color;
 }
