@@ -118,6 +118,38 @@
 }
 
 // Download button
-.hoverButtonGroup__5b423 {
+%playerMediaDownload {
   background-color: rgba(0, 0, 0, 0.6);
+}
+// VOICE MESSAGE EMBED
+/*voice message*/
+
+%themeDark %voiceMessageContainer {
+  background: rgba(0, 0, 0, 0.6);
+  &:not(%voiceMessagePlaying) %voiceMessagePlayButtonContainer {
+    background: $main-color;
+    &:hover,
+    &:active {
+      background: $hover-color;
+    }
+  }
+}
+%voiceMessagePlayButtonContainer {
+  &:active {
+    %voiceMessagePlayButtonIcon {
+      color: #fff;
+    }
+  }
+}
+%voiceMessagePlayingRipple {
+  background-color: transparent;
+}
+// VOICE MESSAGE PLAYING
+%voiceMessagePlaying {
+  %voiceMessagePlayButtonContainer {
+    background: #fff;
+  }
+  %voiceMessagePlayButtonIcon {
+    color: $main-color;
+  }
 }

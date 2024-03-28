@@ -5,10 +5,10 @@
   flex-direction: row-reverse;
   border-radius: 3px;
   transition: all 0.1s ease-in-out;
-  background: transparent;
+  background-color: transparent !important;
   border-color: transparent;
   cursor: default;
-  
+
   > %roleName {
     margin-right: 0;
     margin-left: 4px;
@@ -36,10 +36,8 @@
 %roleRemoveIcon {
   left: calc(100% - 7px);
 }
-%roleCircle {  
-  %userPopoutRoles &,
-  %guildSettingsMembersRoleWrapper &,
-  %forumSetupRoleList & {
+%roleCircle {
+  %role & {
     width: 0 !important;
     height: 0 !important;
     &:not(:empty) {
@@ -55,7 +53,7 @@
       transition: all 0.1s ease-in-out;
       pointer-events: none;
     }
-  }  
+  }
 }
 %roleAddButton {
   background: hsla(0, 0%, 100%, 0.1);
@@ -75,7 +73,7 @@
   }
 }
 /*assign roles popout*/
-.container_d27846 {
+%roleAssignPopout {
   background-color: hsla(0, 0%, 0%, 0.8);
   border: none;
 }

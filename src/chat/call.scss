@@ -1,8 +1,8 @@
 /* PRIVATE CALL */
 %callWrapper {
-  background: rgba(0, 0, 0, calc(var(--background-shading) * 0.6));
+  background: rgba(0, 0, 0, calc(var(--background-shading) * 0.8));
   &%callMinimum {
-    background: rgba(0, 0, 0, calc(var(--background-shading) * 0.6));
+    background: rgba(0, 0, 0, calc(var(--background-shading) * 0.8));
   }
 }
 %callContainer {
@@ -11,10 +11,13 @@
 
 // VIDEO STREAM
 %callTile {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.7));
 }
 %callInviteButton {
   background-color: $main-color;
+  &:hover {
+    background-color: $hover-color;
+  }
 }
 %callUserTile {
   background-color: transparent;
@@ -29,6 +32,27 @@
   &%callTileSpeaking {
     box-shadow: inset 0 0 0 2px $main-color;
   }
+}
+
+// WATCH STREAM
+%watchStream,
+%myScreenControlOptions {
+  background-color: $main-color;
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+
+%myScreen {
+  background: $main-color;
+  border-radius: 100px;
+  &:hover {
+    background: $hover-color;
+  }
+}
+
+%streamStillRunning {
+  background-color: rgba(0, 0, 0, calc(var(--background-shading) * 0.7));
 }
 
 // ACTION BUTTON

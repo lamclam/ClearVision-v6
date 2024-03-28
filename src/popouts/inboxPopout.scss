@@ -32,7 +32,7 @@
   padding-right: 10px;
   padding-left: 20px;
 }
-.guildIcon_cccd03 {
+%messagesPopoutChannelHeaderIcon {
   background-color: transparent;
 }
 
@@ -159,7 +159,12 @@
   }
 }
 
-// DATE
-%recentMentionsPopout %dividerDate:after {
-  background-color: rgba(0, 0, 0, 0.93);
+// INBOX UNREAD PILL
+%inboxPopoutPill {
+  background-color: $main-color;
+}
+
+// CHATTING ABOUT: TOPIC
+%inboxChattingAbout {
+  background-color: hsla(0, 0%, 30%, calc(var(--background-shading) * 0.5));
 }

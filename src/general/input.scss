@@ -1,6 +1,6 @@
 /* INPUT */
 %inputWrapper {
-  padding: 0 2px 2px 2px;
+  padding: 2px;
 }
 %input {
   color: var(--text-normal);
@@ -17,20 +17,13 @@
   &%inputFocused {
     box-shadow: 0 0 2px 2px $main-color;
   }
-  &%inputNoBorder,
   &%inputField {
     border: none;
     box-shadow: none;
     background: none;
   }
-  .copyInput-3QjTFp {
-    %input {
-      background-color: transparent;
-      box-shadow: none;
-      &:focus,
-      &%inputFocused {
-        box-shadow: none;
-      }
-    }
+  %inputCopy & {
+    background-color: transparent;
+    box-shadow: none;
   }
 }

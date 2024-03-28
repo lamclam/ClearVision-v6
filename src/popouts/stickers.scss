@@ -19,9 +19,6 @@
 }
 
 // CATEGORY
-%stickerCategoryWrapper {
-  background-color: transparent;
-}
 %stickerCategoryGeneric {
   color: hsla(0, 0%, 100%, 0.7);
   &:hover {
@@ -36,9 +33,6 @@
 }
 
 // PICKER
-%stickerUpsellContent {
-  background-color: hsla(0, 0%, 0%, 0.8);
-}
 %stickerPickerRow {
   column-gap: 8px !important;
 }

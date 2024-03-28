@@ -7,27 +7,8 @@
 %customizeChannelsPrompt {
   background: var(--background-overlay);
 }
-/*search bar*/
-%customizeChannelsSearch,
-%customizeChannelsSearch:focus-within {
-  background: rgba(0,0,0,.5);
-  border: 2px solid $main-color;
-}
-/*search bar with dropdown*/
-%customizeChannelsSearchDropdown,
-%customizeChannelsSearchDropdown:hover {
-  background: rgba(0,0,0,.5);
-  border: 2px solid $main-color;
-}
-/*dropdown options*/
-%customizeChannelsSearchOption {
-  background: $main-color;
-}
-%customizeChannelsSearchMenu {
-  background: rgba(0,0,0,.8);
-}
 %customizeChannelsPill {
-  background: rgba(0,0,0,.2);
+  background: rgba(0, 0, 0, 0.2);
   border: 1px solid $main-color;
 }
 /*option buttons*/
@@ -38,7 +19,7 @@
   }
   &%customizeChannelsSelected {
     border: 2px solid var(--success-color);
-    background: rgba(0,0,0,.2);
+    background: rgba(0, 0, 0, 0.2);
   }
 }
 /*profile card*/
@@ -58,11 +39,6 @@
   %textExtraSmallMedium {
     color: hsla(0, 0%, 100%, 0.5) !important;
     transition: all 0.15s ease-in-out;
-  }
-  %browseChannelsChecked {
-    & + %textExtraSmallMedium {
-      color: hsla(0, 0%, 100%, 0.7) !important;
-    }
   }
 }
 
@@ -110,7 +86,7 @@
 }
 
 // NOT IN CHANNEL LIST
-%channelHeaderBar {
+%channelNotInList {
   background: transparent;
 }
 /* SERVER GUIDE */
@@ -133,6 +109,30 @@
     background: $main-color;
     border: 4px solid transparent;
   }
+  %guildFolderIcon {
+    position: relative;
+    background-clip: padding-box;
+    background-color: none;
+    background-position: center center;
+    background-size: 100%100%;
+  }
+  %serverGuideChannelIcon,
+  %serverGuideRulesIcon {
+    background: $main-color;
+    & > svg > path {
+      fill: #fff;
+    }
+  }
+  %serverGuideActionCompleted > path {
+    fill: var(--success-color);
+  }
+}
+/*Cases where we get taken to channels*/
+%serverGuideChannelHintBanner {
+  background: rgba(0, 0, 0, calc(var(--background-shading) * 0.4));
+}
+%serverGuideChannelHintIcon {
+  background: $main-color;
 }
 /* SERVER SUBSCRIPTIONS */
 %serverSubscription {

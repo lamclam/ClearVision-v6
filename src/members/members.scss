@@ -12,7 +12,7 @@
   background: rgba(0, 0, 0, calc(#{cv('bg.app.shading')} * 0.6));
 }
 %membersNotices {
-  width: var(--members-width);
+  width: cv('members-width');
 }
 
 %members {
@@ -27,7 +27,7 @@
     font-weight: 700;
     text-align: center;
     transition: all 0.15s ease-in-out;
-    opacity: 0.85;
+    opacity: 0.7;
     &:hover {
       opacity: 1;
     }
@@ -49,6 +49,7 @@
 
   // MEMBER
   %member {
+    max-width: calc(var(--members-width) - 16px);
     background: transparent;
     backface-visibility: hidden;
     &%memberOffline {
@@ -197,7 +198,7 @@
     background: hsla(0, 0%, 100%, 0.3);
   }
 }
-.addMembersIcon_e97261 {
+%addMembersIcon {
   background-color: var(--background-overlay);
 }
 
