@@ -2,7 +2,8 @@
 %appMount {
   background: cv('bg.app.overlay');
 }
-%shakeable {
+%shakeable,
+body {
   background: transparent;
 }
 %bg {

@@ -1,3 +1,7 @@
+// Force bounding box to layer parent
+%fullMotion %userPopoutTranslate {
+  transform: unset !important;
+}
 /* USER POPOUT */
 %userPopoutOuter {
   &%userProfileOuterUnthemed {
@@ -74,4 +78,11 @@
 }
 %userPopoutMessageInputContainer {
   border: none;
+}
+
+// NOTE
+%userPopoutNote {
+  textarea:focus {
+    background-color: rgba(255, 255, 255, 0.07);
+  }
 }

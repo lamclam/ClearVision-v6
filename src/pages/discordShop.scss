@@ -36,6 +36,9 @@
 }
 
 // PREVIEW
+%shopPreviewInfo {
+  background-color: transparent;
+}
 %shopChatPreview {
   left: 0;
   bottom: 0;
@@ -79,4 +82,9 @@
     background: $hover-color;
     color: var(--text-normal);
   }
+}
+
+// Shop new pill
+%shopNewPill {
+  background: radial-gradient(ellipse at 120%200%, var(--main-color) 10%, transparent 70%);
 }
