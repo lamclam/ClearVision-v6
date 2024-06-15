@@ -40,10 +40,10 @@
 .base_c0676e {
   @extend %base !optional;
 }
-.backdrop__1a911 {
+.backdrop__34c64 {
   @extend %backdrop !optional;
 }
-.withLayer__29ace {
+.withLayer_e684b0 {
   @extend %backdropWithLayer !optional;
 }
 .notice__5fd4c {
@@ -422,9 +422,6 @@
 }
 .title__4a7a9 {
   @extend %accountPanelUsername !optional;
-}
-.subtext_ce73b4 {
-  @extend %accountPanelDiscriminator !optional;
 }
 .withTagAsButton_e22174 {
   @extend %accountPanelTagButton !optional;
@@ -958,14 +955,8 @@
 .inlineCode__0cacf {
   @extend %inlineCode !optional;
 }
-.numberBadge__40d6f {
+.numberBadge_c1210c {
   @extend %numberBadge !optional;
-}
-.base__5ed84 {
-  @extend %numberBadgeBase !optional;
-}
-.baseShapeRound_c1de89 {
-  @extend %numberBadgeBaseShapeRound !optional;
 }
 .textBadge_f05120 {
   @extend %textBadge !optional;
@@ -1276,13 +1267,13 @@
 .item_f9d377 {
   @extend %guildPillItem !optional;
 }
-.wrapper__8436d {
-  @extend %guildLink !optional;
+.wrapper_a6f950 {
+  @extend %guildNav !optional;
 }
-.selected_ae80f7 {
-  @extend %guildLinkSelected !optional;
+.selected_b420e6 {
+  @extend %guildNavSelected !optional;
 }
-.icon__11cf1 {
+.icon_e2a8c1 {
   @extend %guildIcon !optional;
 }
 .wrapper__9916c {
@@ -1291,20 +1282,20 @@
 .svg__34dd4 {
   @extend %guildSVG !optional;
 }
-.childWrapper_a6ce15 {
+.childWrapper__760c6 {
   @extend %guildChildWrapper !optional;
 }
-.acronym_fb7739 {
+.acronym__88ca6 {
   @extend %guildAcronym !optional;
 }
 .iconBadge__19638 {
   @extend %guildBadge !optional;
 }
-.icon__62c73 {
+.icon__95c50 {
   @extend %guildBadgeIcon !optional;
 }
 .isCurrentUserConnected__3bd70 {
-  @extend %guildBadgeParticipating !optional;
+  @extend %guildBadgeConnected !optional;
 }
 .placeholderMask_ca6625 {
   @extend %guildPlaceholderMask !optional;
@@ -1540,6 +1531,9 @@
 }
 .peopleColumn__0c784 {
   @extend %friendsColumn !optional;
+}
+.searchBar__310d8 {
+  @extend %friendsSearch !optional;
 }
 .peopleListItem_dab480 {
   @extend %friendsItem !optional;
@@ -2304,19 +2298,19 @@ pre {
 .blockquoteDivider__5cbad {
   @extend %blockquoteDivider !optional;
 }
-.reactions__2ede2 {
+.reactions_da5b2a {
   @extend %reactions !optional;
 }
-.reaction_ef7e09 {
+.reaction__4a43f {
   @extend %reaction !optional;
 }
-.reactionMe__9fc5c {
+.reactionMe__0fffc {
   @extend %reactionMe !optional;
 }
-.reactionInner_d6d30f {
+.reactionInner_bd636d {
   @extend %reactionInner !optional;
 }
-.reactionCount_b780c8 {
+.reactionCount__2c34d {
   @extend %reactionCount !optional;
 }
 .spoilerMarkdownContent__5c448 {
@@ -2516,9 +2510,6 @@ pre {
 }
 .badgeList__126b0 {
   @extend %userModalBadgeList !optional;
-}
-.badgeList__76720 {
-  @extend %userModalDMBadgeList !optional;
 }
 .badgeList__6b2c7 {
   @extend %accountSettingsBadges !optional;
@@ -3033,7 +3024,10 @@ pre {
 .userPanelInnerThemed__651e4 {
   @extend %userProfileDMInnerThemed !optional;
 }
-.userPanelOverlayBackground_a2b6ae {
+.badgeList__76720 {
+  @extend %userProfileDMBadgeList !optional;
+}
+.overlayBackground__345c9 {
   @extend %userProfileDMOverlayBackground !optional;
 }
 .actionColor_db400e {
@@ -3804,10 +3798,6 @@ pre {
 }
 .giftCard__4b868 {
   @extend %userSettingsNitroGiftCard !optional;
-}
-.borderRect__8ec00 {
-  // OBSOLETE
-  @extend %userSettingsBoostHeaderBorderRect !optional;
 }
 .header__5c5a9 {
   @extend %userSettingsBoostHeader !optional;
@@ -4726,10 +4716,16 @@ pre {
 .newPostsButton__5c904 {
   @extend %forumNewPosts !optional;
 }
-.reactionInner_bd636d {
+.reaction_ef7e09 {
+  @extend %forumReaction !optional;
+}
+.reactionMe__9fc5c {
+  @extend %forumReactionMe !optional;
+}
+.reactionInner_d6d30f {
   @extend %forumReactionInner !optional;
 }
-.reactionCount__2c34d {
+.reactionCount_b780c8 {
   @extend %forumReactionCount !optional;
 }
 .addReactButton__4342f {
@@ -4746,12 +4742,6 @@ pre {
 }
 .addTags__282cb {
   @extend %forumSettingsGuidelinesAddTags !optional;
-}
-.reaction__4a43f {
-  @extend %forumReaction !optional;
-}
-.reactionMe__0fffc {
-  @extend %forumReactionMe !optional;
 }
 .heading-lg-bold_f5eeaa {
   @extend %headingLargeBold !optional;
@@ -5016,11 +5006,14 @@ pre {
 .shop_b31ed2 {
   @extend %shop !optional;
 }
-.shopScrollBackgroundPrimary__28f1d {
+.shopScroll_caa423 {
   @extend %shopBackground !optional;
 }
-.pageWrapperBackgroundPrimary__36469 {
+.pageWrapper__18871 {
   @extend %shopPageWrapper !optional;
+}
+.whatsNewSectionBackground__00412 {
+  @extend %shopWhatsNew !optional;
 }
 .skeleton__3d497 {
   @extend %shopLoadingSkeleton !optional;
@@ -5040,8 +5033,11 @@ pre {
 .shopCard__3d319 {
   @extend %shopCard !optional;
 }
-.cardBackground_d86c0e {
-  @extend %shopCardBackground !optional;
+.shopCard__9e3fe {
+  @extend %shopCardNitro !optional;
+}
+.darkCardBackground_d398da {
+  @extend %shopCardDarkBackgroundNitro !optional;
 }
 .darkCardBackground__38c63 {
   @extend %shopCardDarkBackground !optional;
@@ -5402,4 +5398,40 @@ pre {
 }
 .secondaryButtonPresentation_a9ebe0 {
   @extend %pollSecondaryButton !optional;
+}
+.channelRow__9cf96 {
+  @extend %clipsShareTo !optional;
+}
+.upload_c98ecb.sizeClip_bd990b {
+  @extend %clipsUploadModal !optional;
+}
+.gameIcon_fc710a {
+  @extend %clipsUploadGame !optional;
+}
+.text-md-semibold__8664f {
+  @extend %clipsUploadTitle !optional;
+}
+.root__5ebb6 {
+  @extend %clipsInterfaceGeneralInfo !optional;
+}
+.root__57e78 {
+  @extend %clipsInterfaceParticipants !optional;
+}
+.clipForm_f207e0 {
+  @extend %clipsInterfaceOptionsModal !optional;
+}
+.userCountPill_f05558 {
+  @extend %clipsInterfaceParticipantsCounter !optional;
+}
+.timePillBackground_bccedc {
+  @extend %clipsInterfaceTimeScroller !optional;
+}
+.playPauseButtonWrapper_c0143c {
+  @extend %clipsInterfacePlayPause !optional;
+}
+.dragHandle__7b38b {
+  @extend %clipsInterfaceDragHandles !optional;
+}
+.container__473f9 {
+  @extend %clipInChatFooter !optional;
 }
