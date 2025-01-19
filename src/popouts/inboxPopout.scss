@@ -123,11 +123,9 @@
 // FRIENDS BUTTON
 %friendRequestsButton {
   background: $main-color;
+  color: #fff;
   &:hover {
     background: $hover-color;
-  }
-  > svg > g > path {
-    color: #fff;
   }
 }
 
@@ -140,25 +138,6 @@
   }
 }
 
-// INBOX HEADER BAR
-%topPill {
-  %topPillItemThemed {
-    background-color: transparent;
-    color: hsla(0, 0%, 100%, 0.5);
-    transition: all 0.3s ease-in-out;
-    &:hover {
-      background-color: rgba(0, 0, 0, 0.5);
-      color: hsla(0, 0%, 100%, 0.7);
-    }
-    &%topPillItemSelected {
-      &%topPillItem {
-        background-color: $main-color;
-        color: #fff;
-      }
-    }
-  }
-}
-
 // INBOX UNREAD PILL
 %inboxPopoutPill {
   background-color: $main-color;
@@ -166,5 +145,5 @@
 
 // CHATTING ABOUT: TOPIC
 %inboxChattingAbout {
-  background-color: hsla(0, 0%, 30%, calc(var(--background-shading) * 0.5));
+  background-color: hsla(0, 0%, 30%, calc($bg-shading * 0.5));
 }

@@ -1,90 +1,39 @@
-// EMOJI INFO POPOUT
-%emojiInfoContainer {
-  background-color: cv('bg.general.popout');
-}
-%emojiInfoTip {
-  background-color: transparent;
-}
-%emojiInfoGuild {
-  background-color: transparent;
-}
-
-// CHAT TOOLBAR
-%chatToolbar {
-  background-color: cv('bg.general.popout');
-  &::before {
-    border-top: 8px solid hsla(0, 0%, 0%, 0.8);
-  }
-}
-%chatToolbarActive,
-%chatToolbarHover:hover {
-  background-color: hsla(0, 0%, 100%, 0.05);
-}
-%chatToolbarIcon {
-  color: hsla(0, 0%, 100%, 0.7);
-}
-
-// STREAM POPOUT
-%themeDark {
-  %streamPopoutPreview {
-    background-color: cv('bg.general.popout');
-  }
-  %streamPopoutPreviewContainer {
-    background-color: transparent;
-  }
-  %streamPopoutWatchButton {
-    border-color: $main-color;
-    color: hsla(0, 0%, 100%, 0.8);
-    &:not([disabled]):hover {
-      border-color: $hover-color;
-      color: #fff;
-    }
-  }
-}
-
 // VC ACTIVITY STATUS POPOUT
 %vcActivityPopout,
 %vcSetActivityPopout {
-  background-color: var(--popout-color);
+  background-color: cv('bg.general.popout');
 }
 %vcSetActivityPopoutIcon {
   background-color: hsla(0, 0%, 100%, 0.07);
   border-color: hsla(0, 0%, 100%, 0.09);
   &:hover {
     background-color: hsla(0, 0%, 100%, 0.07);
-    border-color: var(--hover-color);
+    border-color: $hover-color;
   }
 }
 %vcSetActivityPopoutButton {
-  background-color: var(--main-color);
+  background-color: $main-color;
   border-color: transparent;
   &:hover {
-    background-color: var(--hover-color);
+    background-color: $hover-color;
     border-color: transparent;
   }
-}
-
-// STUDENT HUBS
-%hubPopoutSidebar {
-  background: transparent;
 }
 
 // LEAVE SERVER REASON
 %serverLeave {
   background-color: transparent;
 }
-%serverLeaveReason {
-  %serverDeleteReasonOption {
-    color: #fff;
-    background: hsla(0, 0%, 100%, 0.03);
-    border: 1px solid hsla(0, 0%, 100%, 0.05);
-    border-top: none;
-    &:first-child {
-      border-top: 1px solid hsla(0, 0%, 100%, 0.05);
-    }
-    &:hover {
-      background: hsla(0, 0%, 100%, 0.06);
-    }
+%serverLeaveOption {
+  color: #fff;
+  background: hsla(0, 0%, 100%, 0.03);
+  border: 1px solid hsla(0, 0%, 100%, 0.05);
+  border-top: none;
+  &:first-child {
+    border-top: 1px solid hsla(0, 0%, 100%, 0.05);
+  }
+  &:hover {
+    background: hsla(0, 0%, 100%, 0.06);
   }
 }
 
@@ -93,17 +42,4 @@
 %sidebarPFPUpsell {
   background: var(--background-overlay);
   border-left: 5px solid $main-color;
-}
-
-// MEMBERS ACTIVITY POPOUT
-/*clicked in*/
-%memberActivityInteractionsContainer {
-  background: var(--background-overlay);
-}
-/*clicked in icon*/
-%memberActivityShareToChannelButton {
-  background: var(--main-color);
-  path {
-    fill: #fff;
-  }
 }

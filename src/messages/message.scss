@@ -24,7 +24,7 @@
 
   // CONTENT
   %messageContent {
-    color: var(--text-normal);
+    color: $text-normal;
   }
   %messageSystemContainer {
     color: hsla(0, 0%, 100%, 0.5);
@@ -72,16 +72,18 @@
 
 // REPLY
 %messageReplied {
-  &:before {
+  %messageRepliedSpine {
     border-color: $main-color;
+    &%messageRepliedContentHovered {
+      border-color: $hover-color;
+    }
   }
   %messageRepliedTextPreview {
     opacity: 0.7;
-    &%messageRepliedTextPreviewClickable:hover {
-      opacity: 1;
-    }
-    %messageRepliedTextContent {
+    max-height: unset;
       color: #fff;
+    &%messageRepliedSpineHovered {
+      opacity: 1;
     }
     %messageRepliedTextPlaceholder {
       color: $main-color;
@@ -107,6 +109,7 @@
 %threadChatIcon {
   color: $main-color;
   filter: drop-shadow(0 0 3px);
+  height: 22px;
   width: 22px;
 }
 %threadEmbed {
@@ -200,4 +203,18 @@
   %messageAutomodFooterIcon path {
     color: var(--url-color);
   }
-} 
+}
+
+// free nitro trial...idk where to put this - Snow
+%nitroTrial {
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: none;
+  border: 1px solid $main-color;
+  &:hover {
+    border: 1px solid $hover-color;
+  }
+}
+
+%themeDark %nitroTrial:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}

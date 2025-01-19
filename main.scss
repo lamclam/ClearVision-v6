@@ -42,7 +42,6 @@ $version: '6.9.0';
 @import 'src/chat/stageCall';
 @import 'src/chat/textArea';
 @import 'src/chat/textAreaAutoComplete';
-@import 'src/chat/treads';
 @import 'src/chat/modView';
 
 // GENERAL ELEMENTS
@@ -56,6 +55,7 @@ $version: '6.9.0';
 @import 'src/general/slider';
 @import 'src/general/spinner';
 @import 'src/general/switch';
+@import 'src/general/tabBar';
 @import 'src/general/tooltip';
 
 // GUILDS
@@ -97,10 +97,9 @@ $version: '6.9.0';
 @import 'src/modals/eventModal';
 @import 'src/modals/addServerModal';
 @import 'src/modals/keyboardShortcuts';
-@import 'src/modals/otherModals';
+@import 'src/modals/payments';
 @import 'src/modals/screenshare';
 @import 'src/modals/threadModal';
-@import 'src/modals/userModal';
 
 // PAGES
 @import 'src/pages/appDirectory';
@@ -113,6 +112,7 @@ $version: '6.9.0';
 @import 'src/pages/studentHub';
 
 // POPOUTS
+@import 'src/popouts/applicationPopout';
 @import 'src/popouts/connectionInfo';
 @import 'src/popouts/emojiPicker';
 @import 'src/popouts/gifPicker';
@@ -123,10 +123,13 @@ $version: '6.9.0';
 @import 'src/popouts/inboxPopout';
 @import 'src/popouts/otherPopouts';
 @import 'src/popouts/searchPopout';
+@import 'src/popouts/soundboard';
 @import 'src/popouts/stickers';
 @import 'src/popouts/threadPopout';
-@import 'src/popouts/userPopout';
 @import 'src/popouts/voiceChannelListeningTo';
+
+// PROFILES
+@import 'src/profiles/userProfiles';
 
 // SCREENS
 @import 'src/screens/crash';
@@ -158,7 +161,7 @@ $version: '6.9.0';
 @import 'src/injectors/ven/icons';
 
 // REPLUGGED
-@import 'src/injectors/rp/plugins';
+// @import 'src/injectors/rp/plugins';
 @import 'src/injectors/rp/rpSettings';
 
 // BETTERDISCORD
@@ -169,3 +172,6 @@ $version: '6.9.0';
 @import 'src/injectors/bd/sidebar';
 @import 'src/injectors/bd/sources';
 @import 'src/injectors/bd/plugins';
+
+// FIXES
+@import 'src/fixespt2';
