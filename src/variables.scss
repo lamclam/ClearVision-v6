@@ -37,6 +37,7 @@ $cv: (
           dnd: var(--dnd-color),
           offline: var(--offline-color),
           streaming: var(--streaming-color),
+          focus: var(--focus-color),
         ),
       // FONT
       font:
@@ -132,6 +133,8 @@ $cv: (
           general:
             (
               popout: var(--popout-color),
+              modal: var(--modal-color),
+              card: var(--card-color)
             )
         )
     ),

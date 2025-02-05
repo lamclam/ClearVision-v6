@@ -1,6 +1,6 @@
 /* CHANNEL SETTINGS */
 
-// HEADER
+// SIDEBAR HEADER
 %settingsSidebar {
   %settingsHeader {
     &:has(%channelSettingsCategory) {
@@ -44,11 +44,14 @@
 }
 
 // PERMISSIONS
+%channelSettingsPermissionsSidebar {
+	background-color: transparent;
+}
 %channelSettingsPermissionsGroup {
   border: 1px solid hsla(0, 0%, 100%, 0.07);
 }
 %channelSettingsPermissionsItem {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.card');
   border-color: hsla(0, 0%, 100%, 0.07);
   cursor: pointer;
   &%channelSettingsPermissionsSelected {
@@ -66,24 +69,27 @@
     }
   }
 }
-%channelSettingsCard {
-  background-color: rgba(0, 0, 0, 0.4);
-  &%channelSettingsCardActive {
-    background-color: rgba(0, 0, 0, 0.4);
+%channelSettingsPermissionsCard {
+  background-color: cv('bg.general.card');
+  &%channelSettingsCardPermissionsActive {
+    background-color: cv('bg.general.card');
   }
 }
-%channelSettingsCardPanel {
+%channelSettingsCardPermissionsFolder {
   background-color: transparent;
 }
 
 %integrationsIconWrapper {
-  background-color: hsla(0, 0%, 0%, 0.4);
+  background-color: cv('bg.general.card');
 }
 
 // ROLES/MEMBERS DROPDOWN
-%themeDark %channelSettingsRoleDropdownHeader,
-%themeDark %channelSettingsRoleDropdownContainer %channelSettingsRoleDropdownTag {
+%channelSettingsRoleDropdownHeader,
+%channelSettingsRoleDropdownPointer {
   background-color: cv('bg.general.popout');
+}
+%channelSettingsRoleDropdownHeader {
+  background-color: transparent;
 }
 %channelSettingsRoleDropdownRow%channelSettingsRoleDropdownSelected %channelSettingsRoleDropdownRowInner {
   background-color: hsla(0, 0%, 100%, 0.1);

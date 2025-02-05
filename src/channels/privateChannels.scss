@@ -50,7 +50,8 @@
   max-width: none;
 }
 %privateChannelInteractive {
-  position: relative;
+  position: relative;  
+  color: var(--channel-color);
   z-index: 1;
   &:before {
     content: '';
@@ -59,7 +60,6 @@
     border-radius: 3px;
     transition: all 0.15s ease-in-out;
     z-index: -1;
-    pointer-events: none;
   }
   &:after {
     content: '';
@@ -69,47 +69,40 @@
     opacity: 0.9;
     transition: all 0.3s ease-in-out;
     z-index: -1;
-    pointer-events: none;
   }
-  %privateChannelIcon,
-  %privateChannelName {
-    color: rgba(255, 255, 255, 0.4);
-    font-size: 14px;
+}
+%privateChannelIcon,
+%privateChannelName {
+  font-size: 14px;
+  transition: all 0.15s ease-in-out;
+  overflow: hidden;
+}
+%privateChannelActivityText {
+  color: var(--channel-color) !important;
+  transition: all 0.15s ease-in-out;
+  strong {
+    color: $main-color;
+    font-weight: 700;
     transition: all 0.15s ease-in-out;
-    overflow: hidden;
   }
-  %privateChannelActivityText {
-    strong {
-      color: $main-color;
-      font-weight: 700;
-      transition: all 0.15s ease-in-out;
-    }
-  }
-  %privateChannelCloseButton {
-    color: #fff;
-  }
-
+}
+%privateChannelInteractive {
   // HOVER
   &:hover {
+    color: var(--channel-hovered);
     background: transparent;
     &:before {
       background: hsla(0, 0%, 100%, 0.1);
     }
-    %privateChannelIcon,
-    %privateChannelName {
-      color: hsla(0, 0%, 100%, 0.7);
-    }
-    %privateChannelCloseButton {
-      opacity: 0.3;
-      &:hover {
-        opacity: 0.7;
-      }
+    %privateChannelActivityText {
+      color: var(--channel-hovered) !important;
     }
   }
 
   // SELECTED
   &%privateChannelInteractiveSelected {
     background: transparent;
+    color: var(--channel-selected);
     &:before {
       background: hsla(0, 0%, 100%, 0.1);
     }
@@ -118,23 +111,14 @@
       background: $main-color;
       animation: cv-channel-select 0.3s ease-in-out;
     }
-    %privateChannelIcon,
-    %privateChannelName {
-      color: #fff;
-    }
     %privateChannelActivityEmoji,
     %privateChannelActivityIcon {
       filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.7));
     }
     %privateChannelActivityText {
+      color: var(--channel-selected) !important;
       strong {
         color: #fff;
-      }
-    }
-    %privateChannelCloseButton {
-      opacity: 0.7;
-      &:hover {
-        opacity: 1;
       }
     }
   }
@@ -144,6 +128,15 @@
     %privateChannelName {
       color: #fff;
     }
+  }
+}
+
+// CLOSE BUTTON
+%privateChannelCloseButton {
+  color: var(--channel-color);
+  opacity: 1;
+  &:hover {
+    color: var(--channel-hovered);
   }
 }
 
